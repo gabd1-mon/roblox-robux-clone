@@ -1,5 +1,5 @@
 import './MainContent.css';
-import { CheckCircle2, ChevronRight, Tag } from 'lucide-react';
+import { ChevronRight, Tag } from 'lucide-react';
 import RobuxIcon from './RobuxIcon';
 const robuxPackages = [
   { current: '11.000', original: '10.000', bonus: '1000 a mais', price: 'R$ 589,90' },
@@ -42,44 +42,6 @@ export default function MainContent() {
         <div className="banner">
           <h1 className="banner-title">Aproveite até<br />25% a mais de<br />Robux</h1>
         </div>
-
-        <section className="limited-items-section">
-          <div className="section-header">
-            <h2 className="section-title">Itens de avatar disponíveis por tempo limitado</h2>
-            <span className="pill-badge">Restam 19 dias</span>
-          </div>
-
-          <div className="item-card">
-            <div className="item-image-container">
-              <img src="/golden_crown.png" alt="Coroa Dourada de Ozymandias" className="item-image" />
-            </div>
-            
-            <div className="item-info">
-              <h3 className="item-name">Coroa Dourada de Ozymandias</h3>
-              <div className="creator-info">
-                <span>Roblox</span>
-                <CheckCircle2 size={14} className="verified-icon" />
-              </div>
-            </div>
-
-            <div className="item-footer">
-              <div className="price-info">
-                <div className="current-price">
-                  <RobuxIcon size={18} className="robux-icon" />
-                  <span className="price-value">24.000</span>
-                </div>
-                <div className="original-price">
-                  <RobuxIcon size={14} className="robux-icon-small" />
-                  <span className="price-strike">22.500</span>
-                </div>
-                <span className="bonus-pill">1500 a mais</span>
-              </div>
-              <button className="buy-btn">
-                R$ 1.179,90
-              </button>
-            </div>
-          </div>
-        </section>
 
         <section className="robux-packages-section">
           <h2 className="section-title">Pacotes de Robux</h2>
