@@ -45,9 +45,8 @@
 
 .roblox-logo-img {
   height: 28px;
-  max-width: 120px;
+  max-width: 130px;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 
 .logo h1 {

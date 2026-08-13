@@ -14,7 +14,7 @@ export default function NavBar() {
           <Menu size={24} />
         </button>
         <div className="logo">
-          <img src="/roblox-logo.png" alt="Roblox" className="roblox-logo-img" />
+          <img src="/roblox-logo-white.png" alt="Roblox" className="roblox-logo-img" />
         </div>
         <nav className="nav-links">
           <a href="#">Destaques</a>
