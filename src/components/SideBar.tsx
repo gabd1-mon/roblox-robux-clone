@@ -10,7 +10,8 @@ import {
   Users, 
   FileText, 
   Store, 
-  CreditCard 
+  CreditCard,
+  CheckCircle2
 } from 'lucide-react';
 
 export default function SideBar() {
@@ -32,11 +33,15 @@ export default function SideBar() {
     <aside className="sidebar">
       <div className="sidebar-profile">
         <div className="profile-img-container">
-          <img src="https://tr.rbxcdn.com/38c6edcb50633730be4cf28263399ccc/150/150/AvatarHeadshot/Png" alt="Profile" />
+          <img src="/avatar_reidobaska1.png" alt="reidobaska1" />
           <div className="status-indicator"></div>
         </div>
         <div className="profile-info">
-          <span className="verify-status">Não verificada</span>
+          <span className="profile-username">reidobaska1</span>
+          <span className="verify-status verified">
+            <CheckCircle2 size={12} style={{ marginRight: '4px', verticalAlign: 'middle' }} color="#00a2ff" fill="#00a2ff" stroke="#ffffff" />
+            Verificada
+          </span>
         </div>
       </div>
 

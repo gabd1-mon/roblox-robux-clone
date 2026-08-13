@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './NavBar.css';
-import { Search, Settings, Bell, Menu } from 'lucide-react';
+import { Search, Settings, Bell, Menu, CheckCircle2 } from 'lucide-react';
 import SendRobuxModal from './SendRobuxModal';
 import RobuxIcon from './RobuxIcon';
 
@@ -14,7 +14,7 @@ export default function NavBar() {
           <Menu size={24} />
         </button>
         <div className="logo">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Roblox_Logo_2022.svg" alt="Roblox" style={{ height: '24px', filter: 'brightness(0) invert(1)' }} />
+          <img src="/roblox-logo.png" alt="Roblox" className="roblox-logo-img" />
         </div>
         <nav className="nav-links">
           <a href="#">Destaques</a>
@@ -33,8 +33,9 @@ export default function NavBar() {
 
       <div className="navbar-right">
         <div className="user-profile">
-          <img src="https://tr.rbxcdn.com/38c6edcb50633730be4cf28263399ccc/150/150/AvatarHeadshot/Png" alt="Avatar" className="avatar-small" />
-          <span className="username">reidosrobuxearth</span>
+          <img src="/avatar_reidobaska1.png" alt="reidobaska1" className="avatar-small" />
+          <span className="username">reidobaska1</span>
+          <CheckCircle2 size={15} className="verified-badge-icon" color="#00a2ff" fill="#00a2ff" stroke="#ffffff" />
         </div>
 
         <div className="nav-actions">

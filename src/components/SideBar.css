@@ -43,13 +43,34 @@
   border-radius: 50%;
 }
 
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-username {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
 .verify-status {
   background-color: #393b3d;
   color: #fff;
   font-size: 11px;
-  padding: 4px 8px;
+  padding: 3px 8px;
   border-radius: 12px;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.verify-status.verified {
+  background-color: rgba(0, 162, 255, 0.15);
+  color: #00a2ff;
+  border: 1px solid rgba(0, 162, 255, 0.3);
 }
 
 .sidebar-menu {

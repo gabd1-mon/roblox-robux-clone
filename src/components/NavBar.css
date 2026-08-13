@@ -38,6 +38,18 @@
   display: none; /* Hidden on desktop by default in this clone */
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.roblox-logo-img {
+  height: 28px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
 .logo h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
