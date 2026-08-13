@@ -1,0 +1,393 @@
+.main-content {
+  margin-left: var(--sidebar-width);
+  margin-top: var(--nav-height);
+  padding: 40px;
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  justify-content: center;
+  /* subtle background gradient effect similar to image */
+  background: radial-gradient(circle at top, #1e2022 0%, var(--bg-main) 60%);
+}
+
+.content-wrapper {
+  max-width: 900px;
+  width: 100%;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.banner-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.pill-badge {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.item-card {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  margin-bottom: 48px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.item-image-container {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1b1d; /* Slightly darker inner bg */
+  position: relative;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+.item-info {
+  padding: 20px 24px 0;
+}
+
+.item-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.verified-icon {
+  color: #00b06f;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 24px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.current-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.original-price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+}
+
+.price-strike {
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.bonus-pill {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.buy-btn {
+  background-color: var(--bg-sidebar);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.buy-btn:hover {
+  background-color: #393b3d;
+}
+
+.robux-packages-section {
+  margin-top: 48px;
+}
+
+.packages-container {
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.package-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.package-row:last-child {
+  border-bottom: none;
+}
+
+.package-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.package-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.current-robux {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 120px;
+}
+
+.robux-value {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.original-robux {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  width: 90px;
+}
+
+.bonus-pill-small {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.for-you-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.tag-icon {
+  margin-right: 2px;
+}
+
+.buy-pkg-btn {
+  background-color: #393b3d;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 24px;
+  border-radius: 6px;
+  width: 140px;
+  transition: opacity 0.2s;
+}
+
+.buy-pkg-btn:hover {
+  opacity: 0.9;
+}
+
+.btn-blue {
+  background-color: #4b66ff; /* Roblox blue color for highlighted button */
+}
+
+/* Novidade na Roblox Section */
+.novidade-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.novidade-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.novidade-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.novidade-title h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.saiba-mais-link {
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.saiba-mais-link:hover {
+  text-decoration: underline;
+}
+
+.subscriptions-grid {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.sub-card {
+  flex: 1;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.sub-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sub-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sub-original-price {
+  color: var(--text-muted);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.sub-current-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sub-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-grow: 1;
+}
+
+.sub-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.sub-btn {
+  background-color: #393b3d;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+
+.sub-btn:hover {
+  opacity: 0.9;
+}
+
+.next-arrow-btn {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 10;
+}
