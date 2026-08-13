@@ -34,7 +34,7 @@ export default function NavBar() {
       <div className="navbar-right">
         <div className="user-profile">
           <img src="/avatar_reidobaska1.png" alt="reidobaska1" className="avatar-small" />
-          <span className="username">reidobaska1</span>
+          <span className="username">boness27</span>
           <CheckCircle2 size={15} className="verified-badge-icon" color="#00a2ff" fill="#00a2ff" stroke="#ffffff" />
         </div>
 

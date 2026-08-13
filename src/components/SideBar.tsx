@@ -1,15 +1,15 @@
 import './SideBar.css';
-import { 
-  Home, 
-  User, 
-  MessageSquare, 
-  UserPlus, 
-  SquareAsterisk, 
-  Briefcase, 
-  ArrowRightLeft, 
-  Users, 
-  FileText, 
-  Store, 
+import {
+  Home,
+  User,
+  MessageSquare,
+  UserPlus,
+  SquareAsterisk,
+  Briefcase,
+  ArrowRightLeft,
+  Users,
+  FileText,
+  Store,
   CreditCard,
   CheckCircle2
 } from 'lucide-react';
@@ -37,7 +37,7 @@ export default function SideBar() {
           <div className="status-indicator"></div>
         </div>
         <div className="profile-info">
-          <span className="profile-username">reidobaska1</span>
+          <span className="profile-username">boness27</span>
           <span className="verify-status verified">
             <CheckCircle2 size={12} style={{ marginRight: '4px', verticalAlign: 'middle' }} color="#00a2ff" fill="#00a2ff" stroke="#ffffff" />
             Verificada
